@@ -17,13 +17,14 @@
 
 <body>
     <main>
-        <div class="container">
+        <div class="container py-5">
+            <h2 class="text-center text-light py-4">MOVIES</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
             @foreach($movies as $movie)
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">{{$movie->title}}</h5>
+                            <h5 class="card-title text-center">{{$movie->title}}</h5>
                             <p class="card-text">{{$movie->original_title}}</p>
                             <p class="card-text">{{$movie->nationality}}</p>
                             <p class="card-text">Anno: {{$movie->date}}</p>
